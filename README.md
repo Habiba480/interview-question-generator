@@ -41,10 +41,19 @@ This is an AI-powered Streamlit application that generates customized technical 
 ## File Structure
 
 ```
-.
-├── app.py                 # Main Streamlit application
-├── requirements.txt       # Required Python packages                 # API keys and environment variables
-└── README.md              # Project overview
+interview_prep/
+│
+├── app.py                         # Entry point for the Streamlit app
+├── requirements.txt              # Project dependencies
+├── README.md                     # Project description and usage
+│
+└── src/
+    ├── __init__.py               # Makes src a Python package
+    ├── prompt_template.py        # LLM prompt logic
+    ├── llm_handler.py            # LLM communication via LangChain
+    ├── ui_helpers.py             # Streamlit styling + PDF export
+    ├── chat_state.py             # Session state handling
+
 ```
 
 ## Technologies Used
